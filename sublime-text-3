@@ -1,0 +1,77 @@
+/**
+ *
+ * @author:      author
+ * @dateTime:    2015-10-17 22:08:55
+ * @description:
+ */
+
+// User-Setting
+
+{
+"auto_complete": true,
+"caret_style": "wide",
+"color_scheme": "Packages/Material Theme/schemes/Material-Theme-Darker.tmTheme",
+"ensure_newline_at_eof_on_save": true,
+"find_selected_text": true,
+"font_size": 11.0,
+"highlight_modified_tabs": true,
+"highlight_line": true,
+"highlight_modified_tabs": true,
+"default_encoding": "UTF-8",
+"draw_white_space": "all",
+"find_selected_text": true,
+"folder_exclude_patterns":
+[
+    ".git",
+    "__pycache__"
+],
+"file_exclude_patterns":
+[
+    ".DS_Store",
+    "*.pid",
+    "*.pyc"
+],
+"ignored_packages":
+[
+    "Markdown",
+    "Vintage"
+],
+"line_padding_bottom": 1,
+"line_padding_top": 1,
+"scroll_past_end": false,
+"show_minimap": false,
+"tab_size": 4,
+"translate_tabs_to_spaces": true,
+"trim_automatic_white_space": true,
+"trim_trailing_white_space_on_save": true,
+"save_on_focus_lost": true,
+"wide_caret": true,
+"scroll_past_end": false,
+"show_minimap": false,
+"soda_classic_tabs": true,
+"word_wrap": true
+}
+
+//Plugin
+Alignment
+Bracket Highlighter
+DocBlockr
+Emmet
+Git
+GitGutter
+JsFormate
+Package Control
+Pretty JSON
+Side Bar
+Anaconda
+Python PEP8 Autoformate
+OmniMarkupPreviewer
+dashdoc
+ctags
+
+//Preference-->key-bings-User
+[
+    { "keys": ["f5"], "command": "build" },
+        {"keys": ["ctrl+shift+f5"], "command": "add_date_time_stamp" }
+        ]
+
