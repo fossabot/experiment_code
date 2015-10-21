@@ -15,6 +15,7 @@
 "find_selected_text": true,
 "font_size": 11.0,
 "highlight_modified_tabs": true,
+"open_files_in_new_window": false,
 "highlight_line": true,
 "highlight_modified_tabs": true,
 "default_encoding": "UTF-8",
