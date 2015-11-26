@@ -1,0 +1,258 @@
+/**
+ *
+ * @author:      author
+ * @dateTime:    2015-10-17 22:08:55
+ * @description:
+ */
+
+# vimrc
+sudo apt-get install -y git
+sudo apt-get install -y vim
+sudo apt-get install -y ctags
+mkdir ~/.vim
+mkdir ~/.vim/bundle
+git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+git clone https://github.com/fyffyt/vim-configuration.git ~/.vim/dot-vimrc
+cp ~/.vim/dot-vimrc/bundles.vim ~/.vim/
+cp ~/.vim/dot-vimrc/vimrc ~/.vimrc
+cp -r ~/.vim/dot-vimrc/bundle/* ~/.vim/bundle/
+
+
+
+# User-Setting
+
+{
+"auto_complete": true,
+"caret_style": "wide",
+"color_scheme": "Packages/Material Theme/schemes/Material-Theme-Darker.tmTheme",
+"ensure_newline_at_eof_on_save": true,
+"find_selected_text": true,
+"font_size": 11.0,
+"highlight_modified_tabs": true,
+"open_files_in_new_window": false,
+"highlight_line": true,
+"highlight_modified_tabs": true,
+"default_encoding": "UTF-8",
+"draw_white_space": "all",
+"find_selected_text": true,
+"folder_exclude_patterns":
+[
+    ".git",
+    "__pycache__"
+],
+"file_exclude_patterns":
+[
+    ".DS_Store",
+    "*.pid",
+    "*.pyc"
+],
+"ignored_packages":
+[
+    "Markdown",
+    "Vintage"
+],
+"line_padding_bottom": 1,
+"line_padding_top": 1,
+"scroll_past_end": false,
+"show_minimap": false,
+"tab_size": 4,
+"translate_tabs_to_spaces": true,
+"trim_automatic_white_space": true,
+"trim_trailing_white_space_on_save": true,
+"save_on_focus_lost": true,
+"wide_caret": true,
+"scroll_past_end": false,
+"show_minimap": false,
+"soda_classic_tabs": true,
+"word_wrap": true
+}
+
+
+
+
+
+#Plugin
+
+Alignment
+Bracket Highlighter
+DocBlockr
+Emmet
+Git
+GitGutter
+JsFormate
+Package Control
+Pretty JSON
+Side Bar
+Anaconda
+Python PEP8 Autoformate
+OmniMarkupPreviewer
+dashdoc
+ctags
+
+
+
+
+#Preference-->key-bings-User
+
+
+[
+    { "keys": ["f5"], "command": "build" },
+        {"keys": ["ctrl+shift+f5"], "command": "add_date_time_stamp" }
+        ]
+
+
+# Ubuntu
+
+1. Terminator
+2. Zsh + Oh-My-zsh
+3. CherryTree
+4. dot 画图
+5. axel 多线程下载
+6. htop
+7. tree
+8. proxychains
+9. Gnome Do
+
+#Python
+
+1. iPython
+2. Notebook
+3. Numpy
+4. Pandas
+5. pip
+6. PyCharm Community
+
+#windows
+
+1. Altrun
+2. Console2
+3. OneNote
+4. Chrome
+5. BandiZip
+6. Sumatra PDF
+7. Total Commander
+8. CLCL
+9. FFmpeg
+10. Candy
+11. Potplayer
+12. FSCapture
+13. My Notes Keeper
+14. IrfanView
+15. Foobar2000/Beo Player
+15. PDF Tools
+16. SubtitleEdit
+17. Everything
+
+
+#Android
+
+1. 快图
+2. Feedly
+3. 钛备份
+4. Instapaper
+
+# Chrome Plugin
+1. xpath and css checker
+2. Google Mail checker
+3. 印象笔记 悦读
+
+＃ C++
+codeblocks
+Android Stduio
+
+# iPhone
+1. uber
+2. InstaPaper
+3. zhihu
+4. OneNote
+5. WunderList
+6. Alipay
+7. gudong
+8. Unread
+9. Wechat
+10. Netease Music
+
+
+# Mac
+
+1. Brew
+2. Sublime Text 3
+3. iTerm 2
+4. WunderList
+5. AppCleaner
+6. OneNote
+7. Evernote
+8. QQ
+9. Wechat
+10. Xcode
+11. Dash
+12. zsh/oh-my-zsh
+13. Chrome: Clearly, Google Mail Checker, Octotree, SSLspeedy2
+14. Evernote
+15. Netease Music
+16. xmind
+17. Caffeine
+18. Aliwangwang
+19. Mysql/Mysql Workbench
+20. Synergy
+21. Eudic/Youdao
+22. Keka
+23. Postman
+24. macdown
+25. Ominidisksweeper
+26. 码簿笔记
+
+
+＃ css-inital.css
+
+/*css reset code */
+
+/****  文字大小初始化,使1em=10px *****/
+body {
+font-size:62.5%;
+} /* for IE/Win */
+html>body {
+font-size:19px;
+} /* for everything else */
+
+/*字体边框等初始化*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {
+ padding: 0;
+ margin: 0;
+ }
+table {
+ border-collapse: collapse;
+ border-spacing: 0;
+ }
+fieldset,img {
+ border: 0;
+ }
+ img {
+ display:block;
+ float:left;
+ }
+address,caption,cite,code,dfn,th,var {
+ font-weight: normal;
+ font-style: normal;
+ }
+ol,ul {
+ list-style: none;
+ }
+caption,th {
+ text-align: left;
+ }
+h1,h2,h3,h4,h5,h6 {
+ font-weight: normal;
+ font-size: 100%;
+ }
+q:before,q:after {
+ content:'';
+ }
+abbr,acronym { border: 0;
+ }
+
+a {
+text-decoration:none;
+}
+
+
