@@ -88,9 +88,6 @@ B98FC99C 8FAC73EE D2B95564 DF450523
 }
 
 
-
-
-
 #Plugin
 
 Alignment
@@ -104,7 +101,7 @@ Package Control
 Pretty JSON
 Side Bar
 Anaconda
-Python PEP8 Autoformate
+Python PEP8 Autoformat
 OmniMarkupPreviewer
 dashdoc
 ctags

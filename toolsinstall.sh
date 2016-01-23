@@ -12,6 +12,7 @@ chmod +x vimrc.sh
 ./vimrc.sh
 curl "https://bootstrap.pypa.io/get-pip.py" -o "get-pip.py"
 python get-pip.py
-
+sudo apt-get install tree
+curl -sSL https://get.docker.com/ubuntu/ | sudo sh
 
 sudo rm /var/crash/*
