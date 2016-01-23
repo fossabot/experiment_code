@@ -10,9 +10,10 @@ sudo apt-get install python-pip python-dev build-essential
 curl "https://raw.githubusercontent.com/niasand/cool-config/master/vimrc.sh" -o "vimrc.sh"
 chmod +x vimrc.sh
 ./vimrc.sh
+cd ~/Documents/ && git clone https://github.com/niasand/cool-config.git
 curl "https://bootstrap.pypa.io/get-pip.py" -o "get-pip.py"
 python get-pip.py
 sudo apt-get install tree
-curl -sSL https://get.docker.com/ubuntu/ | sudo sh
-
+sudo apt-get upgrade docker
+sudo pip install -r ~/Documents/cool-config/requirements.txt
 sudo rm /var/crash/*

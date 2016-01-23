@@ -1,0 +1,8 @@
+notebook
+ipython
+Numpy
+Pandas
+requests
+xlrd
+arrow
+
