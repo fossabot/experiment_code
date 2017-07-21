@@ -2,14 +2,13 @@
 # @Author: jerry
 # @Date:   2017-07-17 17:20:09
 # @Last Modified by:   jerry
-# @Last Modified time: 2017-07-17 22:15:21
+# @Last Modified time: 2017-07-18 17:39:30
 
 from __future__ import print_function
 
 import sys
 from operator import add
 from pyspark.sql import SparkSession
-
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
