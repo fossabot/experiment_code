@@ -28,3 +28,4 @@ if __name__ == '__main__':
     dd = date(2017,9,8)
     print format(dd,'%A, %B %d,%Y')
 
+

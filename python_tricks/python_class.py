@@ -21,6 +21,22 @@ class Pair:
     # def __str__(self):
     #     return '({0.x!s},{0.y!s})'.format(self)
 
+class DemoClass:
+    '''This is a demonstation class 
+
+    This text is the documents string that is 
+    used to describe the class! 
+
+    '''
+    pass 
+
+my_instance_1 = DemoClass()
+print type(my_instance_1)
+print id(my_instance_1)
+print dir(DemoClass)
+print dir(my_instance_1)
+print DemoClass.__doc__
+print DemoClass.__module__
 if __name__ == '__main__':
     p = Pair(3,4)
     print 'p is {0!r}'.format(p)
