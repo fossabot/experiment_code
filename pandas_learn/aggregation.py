@@ -2,11 +2,9 @@
 # @Author: jerry
 # @Date:   2017-09-09 21:03:21
 # @Last Modified by:   jerry
-# @Last Modified time: 2017-09-23 16:49:19
+# @Last Modified time: 2017-09-23 17:09:41
 
 import pandas as pd
-
-
 
 def get_csv(filename,path=None):
     df = pd.read_csv(filename)
