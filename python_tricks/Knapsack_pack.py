@@ -2,7 +2,7 @@
 # @Author: jerry
 # @Date:   2017-09-28 17:40:44
 # @Last Modified by:   jerry
-# @Last Modified time: 2017-09-28 18:12:08
+# @Last Modified time: 2017-09-28 18:14:35
 
 def pack_result():
     """最简单的背包问题，背包最大容量是10  总共4件物品，价值和重量分别如下
@@ -10,13 +10,14 @@ def pack_result():
         Total items         : N = 4
         Values of items     : v[] = {10, 40, 30, 50}
         Weight of items     : w[] = {5, 4, 6, 3}
+
+        返回值：拿到的最大价值，和背包的剩余容量
     """
 
     V = [10,40,30,50]
     W = [5,2,8,7]
     MAX = 9
     print getValue(W,V,MAX,4)
-
 
 def getValue(W,V,MAX,i):
     if i>1:
