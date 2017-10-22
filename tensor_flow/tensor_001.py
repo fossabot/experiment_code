@@ -7,8 +7,7 @@
 from __future__ import print_function
 
 import tensorflow.examples.tutorials.mnist.input_data as input_data
-import tensorflow as
- tf
+import tensorflow as tf
 
 mnist = input_data.read_data_sets("./MNIST_data/", one_hot=False)
 print("Training data size:",mnist.train.num_examples)

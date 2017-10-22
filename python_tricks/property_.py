@@ -27,7 +27,7 @@ class Person:
 
 if __name__ == '__main__':
     a = Person("42")
-    print a.first_name
+    print(a.first_name)
     a.first_name = 42
 
 

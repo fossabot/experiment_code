@@ -9,4 +9,4 @@ def get_info(self, *args):
     return "Test data"
 
 json.get_info = get_info
-print json.get_info("xx")
+print(json.get_info("xx"))
