@@ -3,13 +3,26 @@
 # @Time    : 2017/11/20 21:37
 # @Author  : Zhiwei Yang
 # @File    : producer_consumer.py
-# /usr/bin/env python3
-# encoding = utf-8
+
 import os
 import time
 from multiprocessing import Pool, Manager
 import random
 
+
+"""
+本程序使用python3编写，可直接运行
+程序中定义了两个类，分别是producer和consumer。每个类中的run方法，用于使用者填补实际功能代码。call方法为调度使用，请不要轻易修改。
+在主函数中，初始化进程池以及manager对象，后者用于产生进程之间的队列、锁和Event。
+主函数先创建多个producer进程，将producer进程们保存如列表producerProcessList，以便后面使用。
+然后，主函数创建多个consumer进程，consumer进程从producer进程产生的数据队列中取出数据。
+当所有producer进程运行完毕时，主函数设置结束event，通知各个consumer，当数据队列为空时，无需循环等待，直接结束进程即可。
+进程池等待所有进程结束后，主函数运行完毕。
+（不要问我为什么不用多线程。python的多线程，我只能说呵呵呵呵呵呵……）
+下面是代码：
+
+
+"""
 
 # producer class
 class producer(object):
