@@ -11,7 +11,7 @@ import random
 
 
 """
-本程序使用python3编写，可直接运行
+
 程序中定义了两个类，分别是producer和consumer。每个类中的run方法，用于使用者填补实际功能代码。call方法为调度使用，请不要轻易修改。
 在主函数中，初始化进程池以及manager对象，后者用于产生进程之间的队列、锁和Event。
 主函数先创建多个producer进程，将producer进程们保存如列表producerProcessList，以便后面使用。
