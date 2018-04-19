@@ -2,7 +2,7 @@
 # @Author: Zhiwei Yang
 # @Date:   2018-04-19 10:14:01
 # @Last Modified by:   Zhiwei Yang
-# @Last Modified time: 2018-04-19 10:17:15
+# @Last Modified time: 2018-04-19 10:21:34
 
 import  unittest
 from selenium import  webdriver
@@ -28,9 +28,9 @@ class TestDiv(unittest.TestCase):
     def test_003(self):
         self.driver.find_element_by_id("kw").send_keys("python")
         self.driver.find_element_by_id("su").click()
-        time.sleep(3)
-
 
 if __name__=='__main__':
-    suite=unittest.TestSuite(unittest.makeSuite(TestDiv))
+    # suite=unittest.TestSuite(unittest.makeSuite(TestDiv))
+    suite=unittest.TestLoader().loadTestsFromTestCase(TestDiv)
+    
     unittest.TextTestRunner(verbosity=2).run(suite)
