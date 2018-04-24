@@ -2,7 +2,7 @@
 # @Author: Zhiwei Yang
 # @Date:   2018-04-24 14:44:23
 # @Last Modified by:   Zhiwei Yang
-# @Last Modified time: 2018-04-24 14:48:31
+# @Last Modified time: 2018-04-24 15:15:29
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 
@@ -10,6 +10,7 @@ def mock_nexus5():
     mobile_emulation = {"deviceName": "Nexus 5X"}
     chrome_options = Options()
     chrome_options.add_experimental_option("mobileEmulation", mobile_emulation)
+    chrome_options.add_argument('lang=en_US')
     driver = webdriver.Chrome(chrome_options=chrome_options)
     driver.get("http://www.baidu.com")
     driver.close()
@@ -26,4 +27,4 @@ def mock_useragent():
     driver.close()
 
 if __name__ == '__main__':
-    mock_useragent()
+    mock_nexus5()
