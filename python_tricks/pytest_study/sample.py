@@ -2,7 +2,7 @@
 # @Author: Zhiwei Yang
 # @Date:   2018-04-27 10:14:12
 # @Last Modified by:   Zhiwei Yang
-# @Last Modified time: 2018-04-27 10:27:30
+# @Last Modified time: 2018-04-27 16:50:01
 
 import pytest
 
@@ -31,8 +31,11 @@ class TestSample2:
    #     return 10
    def test_answer3(self, count,count2):
        print('get count %s' % count)
-       print('get count %s' % count2)
+       print ("&" * 40)
        assert count == 10
+       print ("&" * 40)
+       print('get count %s' % count2)
+       
    def test_answer_4(self, count,count2):
        print('test_answer_2 get count %s' % count)
        print('get count %s' % count2)
