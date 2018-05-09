@@ -23,7 +23,7 @@ def main():
     
     print data['item'].count()
     
-    print data['duration'].max()
+    print zzdata['duration'].max()
     print data['duration'][data['item']=='call'].sum() # How many seconds of phone calls are recorded in total?
     print data['month'].value_counts() # How many entries are there for each month?
     print data['network'].nunique() # Number of non-null unique network entries
