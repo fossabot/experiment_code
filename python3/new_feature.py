@@ -2,7 +2,18 @@
 # @Author: jerry
 # @Date:   2018-02-01 22:57:12
 # @Last Modified by:   jerry
-# @Last Modified time: 2018-02-25 10:52:03
+
+from functools import lru_cache
+
+@lru_cache(maxsize=32)
+def fib(n):
+    if n < 2:
+        return n
+    return fib(n-1) + fib(n-2)
+
+print([fib(n) for n in range(10)])
+# Output: [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
+
 
 """
 from logbook import Logger, StreamHandler
@@ -34,3 +45,4 @@ if __name__ == "__main__":
     for item in range(1000):
         LOG.info('Log-info')
         sleep(0.5)
+
